@@ -1,0 +1,23 @@
+{
+  "name": "fp-ht-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msemenistyi/academy-fp-ht-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msemenistyi/academy-fp-ht-2/issues"
+  },
+  "homepage": "https://github.com/msemenistyi/academy-fp-ht-2#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "ramda": "^0.26.1"
+  }
+}
