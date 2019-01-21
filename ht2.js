@@ -37,11 +37,11 @@ const rearrangeMatrix = (table, newColumn, newRow, item) => {
 
     const vector = R.flatten(table);
 
-    const repositionItem = (oldVector, newColumn, newRow, item) => {
+    const repositionItem = (vector, newColumn, newRow, item) => {
         const oldPosition = (item.column + 1) * (item.row + 1);
         const newPosition = (newColumn + 1) * (newRow + 1);
-        const vector = [0, ...oldVector]
-        const vectorWithoutItem = [...vector.slice(0, oldPosition), ...vector.slice(oldPosition + 1)];
+        const modifiedVector = [0, ...vector]
+        const vectorWithoutItem = [...modifiedVector.slice(0, oldPosition), ...modifiedVector.slice(oldPosition + 1)];
         return [...vectorWithoutItem.slice(1, newPosition), item, ...vectorWithoutItem.slice(newPosition)];
     }
 
